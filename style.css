@@ -3,6 +3,12 @@
   --color-primary: pink;
   --color-secondary: rgb(41, 3, 8);
   --padding: 1em;
+  --font-family: Sligoil;
+}
+
+@font-face {
+  font-family: Sligoil;
+  src: url("assets/fonts/Sligoil-Micro.woff2") format("woff2");
 }
 
 /* Box sizing rules */
@@ -45,6 +51,11 @@ body {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   padding: calc(1.5 * var(--padding));
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-family: var(--font-family);
 }
 
 /* A elements that don't have a class get default styles */
@@ -108,6 +119,7 @@ ul a {
   text-decoration: underline 1px dotted;
   text-underline-offset: 0.25em;
   color: var(--color-secondary);
+  transition: 0.15s;
 }
 
 a:hover {
@@ -162,12 +174,24 @@ li {
   header,
   li,
   h1 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   #about > .grid-container {
     gap: calc(2 * var(--padding));
+    margin-bottom: 2em;
   }
   #writing-list {
     margin-bottom: calc(3 * var(--padding));
+  }
+  #writing-list li {
+    text-indent: -0.5em;
+    padding-left: 0.5em;
+  }
+  .biography {
+    margin-top: 1em;
+  }
+  .social {
+    text-align: center;
+    line-height: 2;
   }
 }
