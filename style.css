@@ -105,6 +105,7 @@ header button {
   border: none;
   padding: 0px;
   background: yellow;
+  cursor: crosshair;
   /* text-decoration: underline dashed;
   text-underline-offset: 0.5em; */
 }
