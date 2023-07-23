@@ -3,7 +3,7 @@
   --color-primary: pink;
   --color-secondary: rgb(41, 3, 8);
   --color-yellow: rgb(255, 255, 0);
-  --color-yellow-light: rgba(255, 255, 0, 0.3);
+  --color-yellow-light: rgba(255, 255, 0, 0.2);
   --padding: 1em;
   --font-family: Sligoil;
 }
@@ -108,6 +108,7 @@ header button {
   padding: 0px;
   background: var(--color-yellow);
   cursor: pointer;
+  color: var(--color-secondary);
   /* text-decoration: underline dashed;
   text-underline-offset: 0.5em; */
 }
