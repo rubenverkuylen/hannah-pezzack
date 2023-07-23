@@ -2,6 +2,8 @@
 :root {
   --color-primary: pink;
   --color-secondary: rgb(41, 3, 8);
+  --color-yellow: rgb(255, 255, 0);
+  --color-yellow-light: rgba(255, 255, 0, 0.3);
   --padding: 1em;
   --font-family: Sligoil;
 }
@@ -104,10 +106,16 @@ header {
 header button {
   border: none;
   padding: 0px;
-  background: yellow;
+  background: var(--color-yellow);
   cursor: pointer;
   /* text-decoration: underline dashed;
   text-underline-offset: 0.5em; */
+}
+
+header button:hover {
+  background-color: var(--color-yellow-light);
+  transition: 0.15s;
+  transition-timing-function: ease-out;
 }
 
 ul {
@@ -117,16 +125,19 @@ ul {
 }
 
 ul a {
-  text-decoration: dotted;
+  background-color: var(--color-yellow-light);
+  color: var(--color-secondary);
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  /* text-decoration: underline 1px dotted;
   -webkit-text-decoration-style: dotted;
   text-underline-offset: 0.25em;
-  -webkit-text-underline-offset: 0.25em;
-  color: var(--color-secondary);
-  transition: 0.15s;
+  -webkit-text-underline-offset: 0.25em; */
 }
 
 a:hover {
-  background-color: yellow;
+  background-color: var(--color-yellow);
+  transition: 0.15s;
 }
 
 /* RESUME */
@@ -137,7 +148,7 @@ a:hover {
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1.4em;
 }
 
 /* ABOUT */
@@ -154,19 +165,25 @@ li {
   font-style: italic;
 }
 
+/* .biography {
+  font-size: 1.4em;
+} */
+
 @media (min-width: 665px) {
   header {
     font-size: 1.5em;
   }
   #about > .grid-container {
     grid-template-columns: 1fr 3fr;
-    font-size: 1.25em;
+    margin: calc(2 * var(--padding)) 0;
   }
   .biography {
     order: 1;
+    font-size: 1.4em;
   }
   #resume {
     min-height: calc(100vh - 5 * var(--padding));
+    margin-bottom: calc(3 * var(--padding));
   }
 }
 
