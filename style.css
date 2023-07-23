@@ -1,11 +1,11 @@
 /* reset/normalizer by https://piccalil.li/blog/a-modern-css-reset/ */
 :root {
-  --color-primary: pink;
+  --color-primary: #ffc0cb;
   --color-secondary: rgb(41, 3, 8);
   --color-yellow: rgb(255, 255, 0);
   --color-yellow-light: rgba(255, 255, 0, 0.2);
   --padding: 1em;
-  --font-family: Sligoil;
+  --font-family: Sligoil, monospace;
 }
 
 @font-face {
@@ -53,10 +53,6 @@ body {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   padding: calc(1.5 * var(--padding));
-  font-family: var(--font-family);
-}
-
-h1 {
   font-family: var(--font-family);
 }
 
@@ -152,8 +148,14 @@ a:active {
   padding-top: var(--padding);
 }
 
-#writing-list a::before {
-  content: "↗";
+sup {
+  margin-left: 0.5em;
+}
+
+sup a::before {
+  /* content: "↗"; */
+  content: "\2197\FE0E";
+  content: "\270E\FE0E";
   margin-right: 0.25em;
 }
 
