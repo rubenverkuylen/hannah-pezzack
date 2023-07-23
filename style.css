@@ -5,7 +5,8 @@
   --color-yellow: rgb(255, 255, 0);
   --color-yellow-light: rgba(255, 255, 0, 0.2);
   --padding: 1em;
-  --font-family: Sligoil, monospace;
+  --font-family: monospace;
+  --font-family: Sligoil;
 }
 
 @font-face {
@@ -149,13 +150,13 @@ a:active {
 }
 
 sup {
-  margin-left: 0.5em;
+  margin-left: 0.35em;
 }
 
 sup a::before {
   /* content: "↗"; */
   content: "\2197\FE0E";
-  margin-right: 0.25em;
+  margin-right: 0.15em;
 }
 
 li {
