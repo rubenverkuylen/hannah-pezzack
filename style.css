@@ -155,7 +155,6 @@ sup {
 sup a::before {
   /* content: "↗"; */
   content: "\2197\FE0E";
-  content: "\270E\FE0E";
   margin-right: 0.25em;
 }
 
