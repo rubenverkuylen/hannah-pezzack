@@ -177,6 +177,10 @@ li {
   font-style: normal;
 }
 
+.social {
+  line-height: 2;
+}
+
 /* .biography {
   font-size: 1.4em;
 } */
@@ -226,12 +230,18 @@ li {
     text-indent: -0.5em;
     padding-left: 0.5em;
   }
+  #writing-list li {
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+  }
+  #writing-list h1 {
+    margin-bottom: 0.2em;
+  }
   .biography {
     margin-top: 1em;
   }
   .social {
     text-align: center;
-    line-height: 2;
   }
 }
 
